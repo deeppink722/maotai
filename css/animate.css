@@ -1,0 +1,191 @@
+.h-3 {
+    transform-origin: left center;
+    animation: h-3 2s ease-in-out infinite;
+}
+
+@keyframes h-3 {
+    0% {
+        transform: translate(15px, 15px) rotate(-90deg);
+    }
+    50% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    60% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    90% {
+        transform: translate(15px, 15px) rotate(-90deg);
+    }
+    100% {
+        transform: translate(15px, 15px) rotate(-90deg);
+    }
+}
+
+.p1-bg .p1-9 {
+    animation: smell 10s linear forwards;
+}
+
+@keyframes smell {
+    0% {
+        opacity: 0.2;
+        transform: translate(-85px, 80px) scale(0.3);
+    }
+    30% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0.2;
+        transform: translate(70px, -94px) scale(1.5);
+    }
+}
+
+
+/* 背景图放大 开始 */
+
+.p1-bg {
+    animation: scaleBg 2s ease-in forwards .5s;
+}
+
+@keyframes scaleBg {
+    from {
+        transform: scale(1) translate(0, 0px);
+        filter: blur(0px);
+    }
+    to {
+        transform: scale(2) translate(0, 53px);
+        filter: blur(3px);
+    }
+}
+
+
+/* 背景图放大 结束 */
+
+
+/* 茅台酒大盒子放大 开始*/
+
+.play {
+    animation: scaleIn 2s ease-in forwards .5s;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(1) translate(0, 0px);
+    }
+    to {
+        transform: scale(2) translate(0, 33px);
+    }
+}
+
+
+/* 茅台酒大盒子放大 结束*/
+
+
+/* loading 进度条加载开始 */
+
+.load-line {
+    animation: load 10s linear forwards;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 1448px;
+    }
+}
+
+
+/* loading 进度条加载结束 */
+
+
+/* 手机摇一摇 开始 */
+
+.p1-4-1 {
+    animation: wobble 2s ease-out infinite;
+}
+
+@keyframes wobble {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    15% {
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/* .bottom-p1 {
+    animation: allboxMove 15000s linear forwards;
+}
+
+@keyframes allboxMove {
+    from {
+        transform: translate(-60px, 125px) scale(0.5) rotate(0deg);
+    }
+    to {
+        transform: translate(-60px, 125px) scale(0.5) rotate(0deg);
+    }
+} */
+
+
+/* 手机摇一摇 结束 */
+
+
+/* .bottom-p1 {
+    animation: boxMove 2s ease-in forwards;
+}
+
+@keyframes boxMove {
+    from {
+        transform: translate(-105px, -136px) scale(0.5) rotate(-72deg);
+    }
+    to {
+        transform: translate(-60px, 125px) scale(0.5) rotate(0deg);
+    }
+}
+
+.third .p1_9 {
+    animation: smell 10s ease-out forwards;
+}
+
+@keyframes smell {
+    0% {
+        opacity: 0.2;
+        transform: translate(-85px, 80px) scale(0.3);
+    }
+    30% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0.2;
+        transform: translate(70px, -94px) scale(1.5);
+    }
+} */

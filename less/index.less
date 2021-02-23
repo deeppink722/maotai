@@ -1,0 +1,309 @@
+// 初始化样式
+*{
+    padding: 0;
+    margin: 0;
+}
+// 引入字体
+@font-face{
+    font-family: ddd;
+    src:url(../font/TrajanPro3-Regular.otf);
+}
+img {
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+i,em{
+    font-style: normal;
+}
+input,
+select {
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.dn{
+    display: none;
+}
+div {
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+img[src=""] {
+    display: none;
+}
+
+
+/*====== 建议body给稿子底色背景 ==============*/
+body,
+html,
+#box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #eddb99;
+    position: relative;
+}
+
+*{
+    padding:0;
+    margin:0;
+}
+li {
+    list-style: none;
+}
+//表单提示文字颜色
+::-webkit-input-placeholder {
+    color: rgb(239, 236, 241);
+}
+
+.pg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+//定义设计稿宽度
+@screenWidth: 750;
+//换算vw
+@vw : (@screenWidth/100vw);
+
+.setwh(@w: 1448, @h:750 ) {
+    width: (@w/@vw);
+    height: (@h/@vw);
+}
+
+//less 定位函数 左上
+.lt(@l: 0, @t: 0) {
+    position: absolute;
+    left: (@l/@vw);
+    top: (@t/@vw);
+}
+
+//右上
+.rt(@r: 0, @t: 0) {
+    position: absolute;
+    right: (@r/@vw);
+    top: (@t/@vw);
+}
+
+//less 定位函数 左下
+.lb(@l: 0, @b: 0) {
+    position: absolute;
+    left: (@l/@vw);
+    bottom: (@b/@vw);
+}
+
+//右下
+.rb(@r: 0, @b: 0) {
+    position: absolute;
+    right: (@r/@vw);
+    bottom: (@b/@vw);
+}
+
+.cl(@w) {
+    position: absolute;
+    left: 50%;
+    margin-left: (-@w/2/@vw);
+}
+
+.ct(@h) {
+    position: absolute;
+    top: 50%;
+    margin-top: (-@h/2/@vw);
+}
+.dn{
+    display: none;
+}
+
+// 横屏 开始
+.land{
+    .h-1{
+    .rt(670,12);
+    .setwh(54,111);
+    .ct(50%);
+    margin-top:-15px;
+    }
+    .h-2{
+        .setwh(31,51);
+        .rt(619,0);
+        .ct(50%);
+    }
+    .h-3{
+        .setwh(114,57);
+        .rt(609,0);
+        .ct(-30%);
+    }
+    .land2{
+        .h-4{
+            .setwh(172,69);
+            .rt(580,0);
+            .ct(-400);
+        }
+    }
+}
+
+// 横屏 结束
+
+// loading 开始
+    .loading{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        height:100%;
+        margin-left: -724px;
+        .lad-bg{
+            height:(800 / @vw);
+        }
+        .lad-1{
+            .rt(683,45);
+            .setwh(97, 264);
+        }
+        .lad-2{
+            .rt(640,122);
+            .setwh(38,108);
+        }
+        .cent{
+            .lad1-1{
+                .setwh(102, 120);
+                .rt(844,421);
+            }
+            .lad1-2{
+                .setwh(86, 136);
+                .rt(730,421);
+            }
+            .lad1-3{
+                .setwh(111, 146);
+                .rt(600,421);
+            }
+            .lad1-4{
+                .setwh(108, 130);
+                .rt(480,421);
+            }
+            .lad1-5{
+                .setwh(63, 131);
+                .rt(420,421);
+            }
+        }
+        .load-line{
+            z-index: 999999;
+            .lt(0,600);
+            .setwh(848,2);
+            background-color: #000;
+        }
+        .load-pre{
+                .lt(0,600);
+                .setwh(01448,2);
+                background-color: #fff;
+            }
+        .bottom{
+            .lad-3{
+                .setwh(85, 90);
+                .lt(630,615);
+            }
+        }
+    }
+// loading 结束
+
+// 博览会 start
+    .bottle{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        width: 100%;
+        height:100%;
+        .p1-bg{
+            height: (750 / @vw);
+        }
+        .bottle-wine{
+            .p1-1{
+                .setwh(331, 38);
+                .lt(520,148);
+            }
+            .shake-box{
+                .p1-4{
+                    .setwh(251, 123);
+                    .lt(590,200);
+                }
+                .p1-4-1{
+                    .setwh(76, 76);
+                    .rt(570,250);
+                }
+            }
+            .smell{
+                .lt(0,0);
+                .p1-9{
+                    .setwh(797, 394);
+                    .lt(0,0);
+                }
+            }
+            .play{
+                width: 100%;
+                height: 100%;
+                .lt();
+                .p1-3{
+                    .setwh(204, 284);
+                    .lt(590,430);
+                }
+                .p1-2{
+                    .setwh(112, 135);
+                    .lt(635,310);
+                    z-index: 99999;
+                }
+                
+            }
+        }
+    }
+// 博览会 end
+
+
+// 音乐 stert
+.music{
+    position: fixed;
+    bottom:15px;
+    right:13px;
+    width: 54px;
+    height: 48px;
+    background: url("../img/muse.png") no-repeat -76px 0;
+    transform: rotate(90deg);
+    animation: music 3s linear infinite;
+}
+
+@keyframes music{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+// 音乐 end
+
+// 适配横屏
+@media screen and (orientation:portrait) {
+    .land,
+    .loading,
+    .bottle {
+        width: 100vh;
+        height: 100vw;
+        display: block;
+        left: 0;
+        top: 0;
+        margin-left: 0;
+        margin-top: 0;
+        transform-origin: 0% 0%;
+        transform: translate(100vw, 0) rotate(90deg);
+    }
+}
+    
